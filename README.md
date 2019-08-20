@@ -28,7 +28,7 @@ Será criado um diretório chamado "bug-metrics-research". Abra e edite os arqui
 - 4 Volte para o diretório do passo 1 e faça o download/clone do repositório que deseja analisar. Neste caso será analisado o projeto Tomcat(http://tomcat.apache.org/).
 No terminal, navegue até o diretório do passo 1 e dê o seguinte comando:
 
-git clone https://github.com/apache/tomcat.git
+$ git clone https://github.com/apache/tomcat.git
 
 O projeto clonado será este no sítio github: https://github.com/apache/tomcat.git
 
