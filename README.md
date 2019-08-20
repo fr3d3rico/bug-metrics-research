@@ -48,21 +48,21 @@ Then go to the "Config.java" class and also change the path to the "REPORT_DIR" 
 The understand has a restriction. When parsing the files, it will grow the .udb file extension to 10mb, 50mb and so on. And with each analysis you do, it slows down and takes longer. So I chose to create an empty analysis file. This file will be in a backup directory, and with each bug, I add it again so that processing doesn't slow down to extract the metrics. That done I remove the file and restart it again copying the file from the backup directory. This way the processing was much faster.
 
 After installing Understand, open the tool and create a new project:
-! [alt tag] (https://github.com/fr3d3rico/bug-metrics-research/blob/master/images/understand-1.png)
+![alt tag] (https://github.com/fr3d3rico/bug-metrics-research/blob/master/images/understand-1.png)
 
 Enter the project data. For example, to make it easier, if you are analyzing more than one project at a time, put the project name the same as the analyzed project name, for example, "tomcat".
 Enter the root directory of the cloned tomcat project.
-! [alt tag] (https://github.com/fr3d3rico/bug-metrics-research/blob/master/images/understand-2.png)
+![alt tag] (https://github.com/fr3d3rico/bug-metrics-research/blob/master/images/understand-2.png)
 
 Enter only the Java technology that will be analyzed.
-! [alt tag] (https://github.com/fr3d3rico/bug-metrics-research/blob/master/images/understand-3.png)
+![alt tag] (https://github.com/fr3d3rico/bug-metrics-research/blob/master/images/understand-3.png)
 
 Click on "Next" and finish the project creation.
-! [alt tag] (https://github.com/fr3d3rico/bug-metrics-research/blob/master/images/understand-4.png)
+![alt tag] (https://github.com/fr3d3rico/bug-metrics-research/blob/master/images/understand-4.png)
 
 Then configure the project informing the metrics that will be extracted.
-! [alt tag] (https://github.com/fr3d3rico/bug-metrics-research/blob/master/images/understand-5.png)
-! [alt tag] (https://github.com/fr3d3rico/bug-metrics-research/blob/master/images/understand-6.png)
+![alt tag] (https://github.com/fr3d3rico/bug-metrics-research/blob/master/images/understand-5.png)
+![alt tag] (https://github.com/fr3d3rico/bug-metrics-research/blob/master/images/understand-6.png)
 
 Then browse to the directory where the project was cloned, for example, c: \ repos \ tomcat and see that there is the file "tomcat.udb". This file is only between 8 and 10kb.
 
