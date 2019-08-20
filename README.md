@@ -79,4 +79,4 @@ The script then checks which files will be analyzed and attempts to add them to 
 
 ## Share!
 
-Feel free to fork, change, improve or create a new project.projeto.
+Feel free to fork, change, improve or create a new project.
