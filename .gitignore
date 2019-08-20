@@ -3,7 +3,6 @@
 .settings/
 .project
 bin/
-build/
 gradle/
 gradlew
 gradlew.bat
