@@ -1,0 +1,14 @@
+plugins {
+    id 'java-library'
+}
+
+apply plugin:'application'
+mainClassName = "com.github.fr3d3rico.bugmetricsresearch.BugAcademicResearch"
+
+dependencies {
+	compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.13'
+}
+
+repositories {
+    jcenter()
+}
