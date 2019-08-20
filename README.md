@@ -12,14 +12,19 @@ Este link (https://scitools.com/feature/metrics/) apresenta uma descrição sobr
 - Java (https://www.java.com/pt_BR/download/)
 - Gradle (https://gradle.org/)
 - Understand (https://scitools.com/feature/metrics/)
+- MySQL (https://www.mysql.com/)
 
 ## How to do?
+
+- Após a instalação do MySQL, crie um banco de dados com o nome do projeto que será analisado, neste caso, "tomcat". Indico criar este banco com o mesmo nome do projeto para manter a organização das análises de vários projetos.
+Importe os dados dos arquivos SQL do diretório "dump" para esta base de dados criada.
+A tabela "bug_and_files" é onde se encontra os bugs analisados e as informações do commit e quais arquivos se deseja analisar.
 
 - 1 Crie um diretório na raíz de seu computador, por exemplo, "c:\repos". Este diretório será utilizado para clonar o projeto que será analisado.
 
 - 2 Crie um diretório de sua preferência para clonar este projeto. Por exemplo, "c:\repos\script". Dentro deste diretório clone este projeto com o comando git:
 
-git clone https://github.com/fr3d3rico/bug-metrics-research.git
+$ git clone https://github.com/fr3d3rico/bug-metrics-research.git
 
 Será criado um diretório chamado "bug-metrics-research". Abra e edite os arquivos com a IDE ou editor de texto de sua preferência.
 
@@ -64,7 +69,8 @@ Em seguida, navegue até o diretorio onde foi clonado o projeto, por exemplo, c:
 Faça uma cópia deste arquivo para o diretório Config.REPOSITORY_DIR + "backup". Este diretório "backup" deve ser criado e será o local de armazenamento dos arquivos .udb para evitar que o projeto Understand cresça e fique pesado para ser processado.
 
 - 9 Para executar o projeto, bastar entrar na raíz do projeto script e executar o comando:
-gradle run
+
+$ gradle run
 
 O script irá consultar os bugs da base de dados. Em seguida, irá fazer o checkout 1 commit anterior do commit do bug. Para fazer o checkout no commit anterior é utilizado o comando "git checkout <commit-id>~1".
 Em seguida o script verifica quais os arquivos serão analisados e tenta adicioná-los no projeto Understand. As vezes acontece de um commit não ter nenhum arquivo no bug-id. Então neste caso não será analisado. Caso ao menos 1 arquivo esteja presente, o script irá analisar e em seguida solicitar as métricas para o Understand.
