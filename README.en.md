@@ -1,8 +1,8 @@
 # bug-metrics-research
-The purpose of this repository is to make the script available to extract metrics from public software repositories. These metrics will be used for a research of doctoral student Jacson from UFG.
+The purpose of this repository is to make the script available to extract software metrics from public software repositories using the Understand tool. These metrics will be used for an IR-based bug localization method, named BULNER (https://github.com/jacsonrbinf/bulner).
 
 ## Metrics
-All metrics were extracted using Understand software (https://scitools.com/feature/metrics/).
+All metrics were extracted using Understand tool (https://scitools.com/feature/metrics/).
 Metrics are information used to evaluate the quality and complexity of software.
 This link (https://scitools.com/feature/metrics/) provides a description of Understand metrics.
 

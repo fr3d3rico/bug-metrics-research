@@ -1,5 +1,5 @@
 # bug-metrics-research
-O objetivo deste repositório é disponibilizar o script para extrair métricas de repositórios de softwares públicos. Estas métricas serão utilizadas para uma pesquisa do aluno de doutorando Jacson da UFG.
+O objetivo deste repositório é disponibilizar o script para extrair métricas de software de repositórios de softwares públicos utilizando a Understand tool. Estas métricas serão utilizadas para um método de localização de defeitos em software conhecido como BULNER (https://github.com/jacsonrbinf/bulner).
 
 ## Metrics
 Todas as métricas foram extraídas utilizando o software Understand (https://scitools.com/feature/metrics/).
